@@ -200,6 +200,9 @@ body {
 
 .jumbotron {
 	padding: 38px 0 18px 0;
+	margin-bottom: 0;
+	border-bottom: 1px solid #e1e1e1;
+	background-color: #f9f9fa;
 }
 
 .jumbotron>.row> .col-md-1, .col-md-9, col-md-2 {
@@ -219,3 +222,109 @@ body {
 .carousel-indicators .active {
   margin: 0px 14px 0px 14px;
 }
+
+.carousel-inner .carousel-caption {
+  top: 40px;
+}
+
+.carousel-inner .judiciario .carousel-caption{
+    top: 22px;
+    width: 740px;
+}
+
+.carousel-inner .btn {	
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	
+	color: #fff;
+	font-size: 13px;
+	width: 110px;
+	margin: 20px 10px 0 10px;
+}
+
+.carousel-inner .btn-branco {
+	border: 1px solid #fff;
+}
+
+.carousel-inner .btn-laranja {
+	border: 1px solid #f26b36;
+	background-color: #f26b36;
+}
+
+.carousel-inner .caixaMagica h1 {
+    font-size: 36px;
+    font-weight: 600;
+    text-shadow: none;
+    line-height: 36px;
+}
+
+.carousel-inner .caixaMagica p {
+    font-size: 30px;
+    font-weight: lighter;
+    text-shadow: none;
+}
+
+.carousel-inner .judiciario p {
+    font-size: 26px;
+    font-weight: lighter;
+    text-shadow: none;
+    line-height: 30px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.carousel-inner .judiciario iframe {
+    margin-right: 40px;
+    margin-left: -60px;
+}
+
+.carousel-inner .judiciario .btn {
+    margin-top: 0;
+}
+
+.carousel-inner .judiciario .btn-branco {
+    margin-left: 0px;
+}
+
+.carousel-inner .brasil2014 img {
+    padding-top: -150px;
+}
+
+.carousel-inner .brasil2014 h1 {
+    width: 620px;
+    margin: 0 auto;
+    font-size: 42px;
+    font-weight: normal;
+    text-shadow: none;
+    line-height: 42px;
+}
+
+.carousel-inner .brasil2014 p {
+    font-size: 20px;
+    font-weight: normal;
+    text-shadow: none;
+    line-height: 36px;
+}
+
+.col-sm-8.nav-bar-nav li {
+    font-size: 0.8em;
+}
+
+@media (width: 768px) {
+  .navbar-nav {
+    font-size: 0.8em;
+  }
+}
+
+
+
+
+
+
+
+
+
