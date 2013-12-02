@@ -1,6 +1,44 @@
 body {
 	margin-top: 50px;
-	font-family: 'roboto';
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.homecol {
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 25px;
+}
+
+.home h1 {
+    display: inline-block;
+    font-size: 42px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #f26b36;
+    margin-bottom: 0px;
+}
+
+.home h3 {
+    display: inline-block;
+    font-size: 26px;
+    border-bottom: 4px solid #f26b36;
+    margin-bottom: 0px;
 }
 
 .navbar-brand {
@@ -9,7 +47,7 @@ body {
 
 .navbar-main {
   background-color: #5189c7;
-  border-color: #e1e1e1;
+  border: none;
 }
 
 .navbar-main .navbar-brand {
@@ -162,6 +200,12 @@ body {
 	font-weight: lighter;
 }
 
+.btn {
+    min-width: 110px;
+    font-size: 14px;
+    padding: 7px 9px;
+}
+
 .btn-busca {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -184,19 +228,11 @@ body {
 	color: #fff;
 	font-size: 16px;
 	font-weight: lighter;
-	border: 1px solid #b7522a;
+	border: 1px solid #a14825;
 	
 	box-shadow: 0px 1px 1px #ccc;
-	
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box; /* prevents bg color from leaking outside the border */
-	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q5NjEzMSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YxNmIzNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* layer fill content */
-	background-image: -moz-linear-gradient(bottom, #d96131 0%, #f16b36 100%); /* layer fill content */
-	background-image: -o-linear-gradient(bottom, #d96131 0%, #f16b36 100%); /* layer fill content */
-	background-image: -webkit-linear-gradient(bottom, #d96131 0%, #f16b36 100%); /* layer fill content */
-	background-image: linear-gradient(bottom, #d96131 0%, #f16b36 100%); /* layer fill content */
-}
+	background-color: #f16b35; /* layer fill content */
+	}
 
 .jumbotron {
 	padding: 38px 0 18px 0;
@@ -247,13 +283,49 @@ body {
 }
 
 .carousel-inner .btn-branco {
+    font-weight: lighter;
 	border: 1px solid #fff;
 }
 
-.carousel-inner .btn-laranja {
+.carousel-inner .btn-branco:hover {
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: rgba(0,0,0,0.8);
+    box-shadow: 0px 1px 1px #333;
+}
+
+.btn-laranja {
+    color: #fff;
+    font-weight: lighter;
 	border: 1px solid #f26b36;
 	background-color: #f26b36;
 }
+
+.btn-laranja:hover {
+    color: #fff;
+	font-weight: lighter;
+	border: 1px solid #b7522a;
+	box-shadow: 0px 1px 1px #ccc;
+	}
+
+.carousel-inner .btn-laranja:hover {
+	box-shadow: 0px 1px 1px #333;
+}
+
+.btn-laranjaVazado {
+    color: #f26b36;
+    font-weight: lighter;
+	border: 1px solid #f26b36;
+	background: transparent;
+}
+
+.btn-laranjaVazado:hover {
+    color: #f26b36;
+	font-weight: lighter;
+	border: 1px solid #f26b36;
+	
+	box-shadow: 0px 1px 1px #ccc;
+	}
 
 .carousel-inner .caixaMagica h1 {
     font-size: 36px;
@@ -319,12 +391,54 @@ body {
     font-size: 0.8em;
   }
 }
+.thumbnail {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #e1e1e1;
+}
 
+.thumbnail .caption {
+    padding: 0px;
+}
 
+.thumbPost {
+    width: 352px;
+    max-width: 100%;
+    height: 117px; 
+    box-shadow: 0px 27px 15px -30px #000;
+}
 
+.caption h3 {
+    height: 100px;
+    width: 100%;
+    font-family: 'roboto slab', serif;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: lighter;
+    margin-top: 11px;
+}
 
+.miniData {
+    background-image: url(images/miniData.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-family: 'roboto', sans-serif;
+    font-size: 13px;
+    padding-top: 3px;
+    height: 18px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding-left: 22px;
+}
 
+footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+    background-color: #f8fafb;
+    border-top: 2px solid #e1e1e1;
+}
 
-
-
-
+footer p {
+    line-height: 25px;
+}
