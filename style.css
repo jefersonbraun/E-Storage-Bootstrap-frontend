@@ -34,6 +34,12 @@ h6,
     margin-bottom: 0px;
 }
 
+@media (max-width: 767px) {
+    .home h1 {
+        margin-bottom: -1px;
+    }
+}
+
 .home h3 {
     display: inline-block;
     font-size: 26px;
@@ -43,6 +49,12 @@ h6,
 
 .navbar-brand {
 	padding: 8px 15px;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        padding: 18px 0 0 16px;
+    }
 }
 
 .navbar-main {
@@ -113,6 +125,12 @@ h6,
 .navbar-main .navbar-collapse,
 .navbar-main .navbar-form {
   border-color: #fff;
+}
+
+@media (max-width: 767px) {
+    .navbar-form {
+        margin-right: 0px;
+    }
 }
 
 .navbar-main .navbar-nav > .dropdown > a:hover .caret,
@@ -206,6 +224,10 @@ h6,
     padding: 7px 9px;
 }
 
+.btn + .btn {
+    margin-left: 14px; /*Corrige a distância entre os botões que ficam lado a lado*/
+}
+
 .btn-busca {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -235,15 +257,10 @@ h6,
 	}
 
 .jumbotron {
-	padding: 38px 0 18px 0;
 	margin-bottom: 0;
+	border-top: 1px solid #e1e1e1;
 	border-bottom: 1px solid #e1e1e1;
 	background-color: #f9f9fa;
-}
-
-.jumbotron>.row> .col-md-1, .col-md-9, col-md-2 {
-	padding-right: 0;
-	padding-left: 0;
 }
 
 #mainCarousel {
@@ -416,6 +433,16 @@ h6,
     line-height: 25px;
     font-weight: lighter;
     margin-top: 11px;
+}
+
+@media screen and (max-width: 767px) {
+    .thumbnail {
+        max-width: 360px;
+    }
+
+    .caption h3 {
+        height: auto;
+    }
 }
 
 .miniData {
