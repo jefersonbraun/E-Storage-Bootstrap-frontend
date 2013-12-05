@@ -480,3 +480,10 @@ footer {
 footer p {
     line-height: 25px;
 }
+
+/* Definir o tamanho do swiper: */
+.swiper-container, .swiper-slide {
+  background-position: center center;
+
+  height: 325px;
+}
