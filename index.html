@@ -6,10 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-touch-carousel.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
+
 	<!--<script src="http://code.jquery.com/jquery.js"></script>-->
     <script src="js/jquery-1.9.1.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    
+    <link href="css/idangerous.swiper.css" rel="stylesheet">
+    <script src="js/idangerous.swiper-2.3.min.js"></script>
 	
 	<!-- HTML5 Shim and Respond.js IE8 support oh HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,7 +27,7 @@
         // Added this just so I didn't have to wait 5 seconds to see if the transition worked. //
         $(document).ready(function() {
 			$('#mainCarousel').carousel({
-				interval: 6000
+				interval: 2000
 			})
         });
     </script>
@@ -98,22 +103,28 @@
 			</div><!-- .row -->
 		</div><!-- .container -->
 
-	</header>
+	</header><!-- HEADER -->
+	
+	
 	<div class="jumbotron">
 	    <div class="container">
-	        <div class="row">
-    	        <div class="col-1-xs col-1-sm col-1-md col-1-lg">
-                    <img src="images/logo_E.png" alt="logo_E" width="38" height="48">
-    	        </div>
-                <div class="col-11-xs col-11-sm col-11-md col-11-lg">
-                    <form class="navbar-form" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Faça uma busca">
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-                </div>
-	        </div>
+	        <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/logo_E.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-busca" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-busca">Submit</button>
+                </form>
+            </div>  
 	    </div>
 	</div><!-- .jumbotron -->
 
