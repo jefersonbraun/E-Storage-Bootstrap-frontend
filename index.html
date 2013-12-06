@@ -132,25 +132,49 @@
 
     <!-- ========================SWIPER======================== -->
     <!-- ======================================================== -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-          <!--First Slide-->
-          <div class="swiper-slide" style="background-image:url(images/plex3.png);"> 
-            TESTE 1
-          </div>
-          
-          <!--Second Slide-->
-          <div class="swiper-slide" style="background-image:url(images/tribunal.png);"> 
-            TESTE 2
-          </div>
-          
-          <!--Third Slide-->
-          <div class="swiper-slide" style="background-image:url(images/brasil2014.png);"> 
-            TESTE 3
-          </div>
-          <!--Etc..-->
-      </div>
-    </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--Primeiro Slide-->
+                <div class="swiper-slide" style="background-image:url(images/plex3_325px.png);"> 
+                    <div class="swiper-slide-content caixaMagica">
+                        <h1>Conheça o Google Search Appliance</h1>
+                        <p>A caixa mágica do Google</p>
+
+                        <p>
+                            <a class="btn btn-lg btn-branco" href="http://getbootstrap.com">Saiba mais</a>
+                            <a class="btn btn-lg btn-laranja" href="http://getbootstrap.com">Fale conosco</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <!--Segundo Slide-->
+                <div class="swiper-slide" style="background-image:url(images/tribunal.png);"> 
+                    <div class="swiper-slide-content judiciario">
+                        <iframe style="float:left;" width="420" height="214" src="http://www.youtube.com/embed/HLhl4vV4tEg" frameborder="0" allowfullscreen></iframe>
+
+                        <p style="float:laft;">Oferecemos soluções de busca seguras e relevantes para o judiciário</p>
+                        
+                        <p>
+                            <a class="btn btn-lg btn-branco" href="http://getbootstrap.com">Saiba mais</a>
+                            <a class="btn btn-lg btn-laranja" href="http://getbootstrap.com">Fale conosco</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <!--Terceiro Slide-->
+                <div class="swiper-slide" style="background-image:url(images/brasil2014.png);"> 
+                    <div class="swiper-slide-content brasil2014">
+                        <h1>Em 2014, teremos muitos estrangeiros no Brasil</h1>
+                        <p>Entenda a importância de uma busca que traduz para 22 idiomas</p>
+
+                        <p>
+                            <a class="btn btn-lg btn-branco" href="http://getbootstrap.com">Saiba mais</a>
+                            <a class="btn btn-lg btn-laranja" href="http://getbootstrap.com">Fale conosco</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- ========================SWIPER======================== -->
     <!-- ======================================================== -->
 
@@ -261,7 +285,7 @@
             $(document).ready(function(){
               var mySwiper = $('.swiper-container').swiper({
                 autoplay:5000,
-                speed:500,
+                speed:2000,
                 mode:'horizontal',
                 loop: false,
               });
