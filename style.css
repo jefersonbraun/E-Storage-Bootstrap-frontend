@@ -204,13 +204,13 @@ h6,
 	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;	
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 1200px) {
     .input-busca {
         width: 899px !important;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .input-busca {
         width: 699px !important;
     }
@@ -380,7 +380,7 @@ footer p {
 }
 
 .swiper-slide .caixaMagica {
-    width: 620px;
+    width: 740px;
 }
 
 .swiper-slide .caixaMagica h1 {
@@ -400,7 +400,7 @@ footer p {
 }
 
 .swiper-slide .judiciario {
-    width: 740px;
+    width: 800px;
 }
 
 .swiper-slide .judiciario p {
@@ -413,9 +413,29 @@ footer p {
     text-align: left;
 }
 
+.swiper-slide .judiciario .no-margin {
+    margin-top: 0px;
+}
+
 .swiper-slide .judiciario iframe {
+    width: 420px;
+    height: 214px;
     margin-right: 40px;
-    margin-left: -60px;
+}
+
+@media (max-width: 991px) {
+
+    .swiper-slide .judiciario {
+        width: 740px;
+    }
+
+    .swiper-slide .judiciario iframe {
+        margin-top: 17px;
+        width: 350px;
+        height: 170px;
+        margin-right: 20px;
+        margin-left: 40px;
+    }
 }
 
 .swiper-slide .judiciario .btn {
